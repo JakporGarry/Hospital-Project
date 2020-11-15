@@ -1,0 +1,721 @@
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 1rem;
+  font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.Pcolor{
+  background: #7352a8;
+}
+.Scolor{
+  background:#9c80cb;
+}
+.Bcolor{
+  background:#c4a2fc;
+}
+.bg {
+  background: rgb(243, 239, 239);
+}
+.btn{
+  background:white ;
+  color: black;
+}
+
+.bold{
+  font-weight:bold;
+  margin-right: 0.5rem;
+}
+
+/**************************************************
+    * INDEX PAGE*
+***************************************************/
+/*NavBar*/ 
+.navbar img{
+  background:white;
+  padding:0.5rem ;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.navbar-nav li a:hover,
+.navbar-brand_custom:hover {
+  color: #fff !important;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  background-color: #f1f1f1;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover
+.dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color:#7352a8 ;
+}
+
+
+/*Carousel*/
+.carousel-indicators > li {
+  border: 4px solid purple ;
+  border-radius: 100%;
+  width: 0.5rem;
+  height:0.5rem;
+}
+.carousel p,
+.carousel h5{
+  font-weight:bold; 
+}
+.carousel-tags{
+  margin-bottom:30vh;
+  font-weight:bold;
+}
+.carousel .btn{
+  padding: 1rem;
+  background: #9c80cb;
+  border: 2px solid white;
+  border-radius: 1.5rem;
+}
+.carousel .btn:hover{
+  background: #7352a8;
+}
+.carousel img {
+    height: 90vh;
+  }
+
+/*SECTION ONE*/
+  .video-wrapper{
+    overflow: hidden;
+    padding-bottom:56.25%;
+    position: relative;
+    height:0 ;
+  }
+  .video-wrapper iframe{
+    height:100% !important;
+    width:100%!important;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .one{
+    margin-bottom: 1rem;
+  }
+  
+
+/*SECTION TWO*/
+.card-text {
+  font-size: 1rem;
+}
+.card-title{
+  font-weight:bold;
+  margin-bottom: 1.5rem ;
+}
+.Two .card-title{
+  color: #fff;
+}
+.card-group{
+ border-bottom:4px solid white ;
+}
+
+/*SERVICE SECTION*/
+.services{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Doctor1.png");
+  background-size:cover;
+  background-repeat:no-repeat ;
+  background-attachment:fixed ;
+ }
+.circle img{
+  height: 4rem;
+}
+.circle a{
+  text-decoration:none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.circle > div  {
+  background-color: #d6dfec;
+  height: 8rem;
+  width:8rem ;
+  border-radius:50%;
+  object-fit: cover;
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.circle :hover{ 
+    height: 8rem;
+    color: blue;
+    font-size:1rem ;
+    transition: all 0.9s;
+}
+
+/*FOOTER*/
+.deep-purple{
+  border-bottom:2px solid #7352a8;
+  width: 60px;
+  display: inline-block;
+}
+
+.page-footer{
+  background: #333;
+  color:#fff ;
+  font-size:0.8rem;
+}
+
+.footer-connect{
+  background: #7352a8;
+  color: #fff;
+}
+.page-footer i{
+  margin-top: 0.2rem;
+}
+.page-footer a{
+  display: inline-flex;
+ }
+
+.page-footer i,
+.page-footer a{
+  color:#fff;
+  text-decoration:none;
+}
+
+.page-footer i:hover,
+.page-footer a:hover{
+  color:#fff;
+}
+
+.page-footer img{
+  background:white;
+  padding:1rem ;
+  height: 6rem;
+}
+.page-footer .btn{
+  background: #98acca;
+  color:#fff ;
+}
+.page-footer .btn:hover{
+  background:#3B5998 ;
+  color:#fff ;
+}
+.footer-copyright{
+  background: rgb(78, 77, 77);
+}
+
+/*FOOTER SOCIAL MEDIA ICONS */
+ul .social-network {
+    list-style: none;
+    display: inline;
+    margin: auto;  
+}
+
+ul li{
+  display: inline;
+  margin: 0 10px;
+}
+
+/*  social icons over color*/ 
+a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+a.icoTwitter:hover {
+  background-color: #33ccff;
+}
+
+a.icoInstagram:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-circle a {
+  background-color: #bacde9;
+}
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+}
+
+.social-circle li a:hover i, 
+.triggeredHover {
+    transform: rotate(360deg);
+    transition: all 0.2s;
+    font-size: 22px;
+}
+
+.social-circle i {
+    color: #fff;
+    transition: all 0.8s;
+}
+
+
+/**************************************************
+    * ABOUT US*
+***************************************************/
+.signature{
+  width: 30%;
+  font-weight: bold;
+  margin-top:4rem;
+}
+hr{
+  width: 100%;
+}
+.links :hover {
+  background-color: #7d61aa;
+  color: white;
+}
+.links a{
+  width: 100%;
+}
+.links a{
+  background-color: rgb(235, 230, 230);
+  margin-top: 0.5rem;
+  display: inline-flex;
+  color:black ;
+}
+.links i{
+  margin-top: 0.2rem;
+}
+.abtUs{
+  margin-bottom: 2rem;
+}
+
+.contact-map .bg{
+  padding: 2rem;
+}
+
+/**************************************************
+    * STAFF *background: rgb(173, 169, 169);  opacity: 0.5;
+***************************************************/
+.active-div{
+  height: 20rem;
+  width: 100%;
+  text-align: center;
+  position:relative;
+}
+
+.menu-div{
+  height: 80%;
+  width: 80%;
+  background: rgba(124, 81, 145, 0.75);
+  color: #fff;
+  position:absolute;
+  top: 10%;
+  left: 10%;
+  padding:2rem;
+  display: none;
+}
+
+.card img{
+  height: 100%;
+  width: 100%;
+}
+
+.r{
+  margin-bottom: 2rem;
+}
+
+.doctors{
+  margin-top: 2rem;
+}
+.doctors a{
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/**************************************************
+    * CLINICAL SERVICES*
+***************************************************/
+
+.clinicalServices{
+ margin:auto ;
+}
+
+.clinicalServices .text-center h6{
+  font-size: 2rem;
+ }
+ .clinicalServices .text-center hr{
+  size: 6rem;
+ }
+ 
+.clinicalServices img{
+   height:21rem;
+   width:70%;
+   margin-bottom: 1.5rem;
+}
+.clinicalServices {
+  margin-top: 1rem;
+}  
+.clinicalServices .service-nav{
+  margin-bottom: 2rem;
+}
+
+
+.clinicalServices .service-item{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding:1rem;
+  border: 2px solid white;
+  background:  #7352a8;
+  text-align: center;
+}
+ 
+.clinicalServices .service-item:before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  transition: all 500ms;
+}
+ 
+ .clinicalServices .service-item .current {
+     color: black;
+ }	
+ 
+ .clinicalServices .service-item .current	:before {
+     width: 100%;
+ }
+ 
+ .service-container {
+     width: 30rem;
+     margin-left: 1.5rem;
+     margin-bottom:2rem ;
+ }
+
+ .service-container  {
+   display: none;
+ }
+
+ .service-container li{
+  margin-left: 1rem;
+ }
+
+
+/**************************************************
+    *BLOG PAGE*
+***************************************************/
+.blog{
+  margin-top: 3rem;
+}
+
+.blog-heading{
+  background-image: url("../images/Doctor1.png");
+  background-size:cover
+}
+.blog-heading h1{
+  font-weight: bold;
+  padding: 2rem;
+}
+.blog .card{
+  box-shadow:1px 1px 10px 1px rgb(189, 184, 184);
+}
+.searchbar{
+  position: relative;
+}
+.searchbar input{
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.searchbar i{
+  position: absolute;
+  top:50%; 
+  left: 10rem;
+  transform : translatey(-50%);
+  padding:0.5rem;
+}
+.searchbar ::placeholder{
+  padding-left: 1rem;
+}
+.keyword i{
+  font-size: 0.8rem;
+}
+.keyword a{
+  text-decoration: none;
+}
+
+/**************************************************
+    *CONTACT PAGE*
+***************************************************/
+.upper-contacts{
+  text-align:center ;
+}
+.upper-contacts h4{
+  font-size: 1.2rem;
+}
+.upper-contacts i{
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: 2px solid purple;
+}
+.upper-contacts p{
+  font-size: 0.7rem;
+}
+
+.counters{
+  text-align:center ;
+}
+.counters i{
+  font-size: 2rem;
+  padding-top: 0.7rem;
+}
+.counters p{
+  font-size: 0.7rem;
+}
+
+.contact-map .row{
+ margin:4rem 0;
+}
+.contact-map .map{
+  margin-bottom:1.5rem;
+ }
+.contact-form{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.contact-map form{
+  border: 2px solid;
+  height:auto ;
+}
+.contact-form form{
+  color:black;
+  width:100% ;
+  padding: 0.5rem;
+  text-align: center;
+}
+.contact-form input{
+  width:90%;
+  margin: 0.5rem;
+  padding: 0.3rem;
+}
+.contact-form ::placeholder{
+  font-size: 0.8rem;
+  padding: 1rem ;
+}
+.contact-form textarea{
+  width:90%;
+  height:6rem ;
+  resize:none ;
+}
+.contact-form .btn{
+  background:rgb(92, 123, 224) ;
+  color: #fff;
+}
+
+/**************************************************
+    *F A Q* 
+***************************************************/
+.FAQ-form{
+  margin: 2rem;
+}
+.FAQ-map {
+  width: 40%;
+}
+.FAQ {
+  margin-top:3rem;
+}
+.accordion .card-body {
+  margin-left:0.8rem;
+}
+.accordion .btn{
+  text-decoration: none;
+}
+
+/**************************************************
+    * PATIENTS AND VISITORS*
+***************************************************/
+.bookings{
+  background-color:#c4a2fc;
+  padding: 4rem;
+  margin: 1rem 0;
+}
+
+.bookings form{
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.bookings textarea{
+  height:6rem ;
+  resize:none ;
+}
+.bookings i{
+  background: #fff;
+  padding: 0.2rem;
+  border-radius: 0.2rem; 
+}
+
+/**************************************************
+    *FACILITY HUB*
+***************************************************/
+.facility-hub img{
+  height: 20rem;
+}
+
+.video-section {
+  display: flex;
+  width: 100%;
+}
+
+.played-video {
+  width: 100%;
+  height: 100%;
+}
+
+/**************************************************
+    * @media queries *
+***************************************************/
+
+@media only screen and (max-width: 992px) {
+
+/*CLINICAL SERVICES*/
+.clinicalServices img{
+  width:100%;
+}
+
+}
+@media screen and (max-width:800px){
+ 
+}
+
+@media only screen and (max-width: 700px) {
+ 
+}
+
+@media screen and (max-width: 500px) {
+/*SERVICE SECTION*/
+.semi{
+  margin-left:2.5rem;
+}
+.services{
+  background-image: url("../images/Doctor1.png");
+  background-position: 20% 50%;
+  background-size:140vh;
+ }
+.circle img{
+  height: 2.5rem;
+}
+.circle a{
+  font-size: 1rem;
+}
+.circle > div  {
+  height: 6rem;
+  width:6rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.circle :hover{ 
+    height: 6rem;
+}
+
+ul .social-network li {
+      margin: 0 5px;
+  }
+  .social-circle li a {
+      font-size: 16px;
+  }
+
+    /*CLINICAL SERVICES*/
+  .clinicalServices .service-nav{
+    width: 100%;
+    text-align: center;
+  }
+
+  .service-container {
+      width: 200px;
+      margin-left: 0;
+  }
+
+  .service-container li{
+      margin-left: 1rem;
+  }
+
+
+  .clinicalServices img{
+      height:100%;
+      width:100%;
+      margin-bottom: 2rem;
+ }
+}
+
+@media screen and (max-width: 380px) {
+  .semi{
+    margin-left:3rem;
+  }
+  .services{
+    background-image: url("../images/Doctor1.png");
+   }
+  .circle img{
+    height: 2rem;
+  }
+  .circle a{
+    font-size: 0.5rem;
+  }
+  .circle > div  {
+    height: 4rem;
+    width:4rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius:20% ;
+  }
+  
+  .circle :hover{ 
+      height: 4rem;
+  }
+
+    ul .social-network li {
+        margin: 0 2px;
+  }
+    .social-circle li a {
+        font-size: 16px;
+  }
+}
+
+
+
+
