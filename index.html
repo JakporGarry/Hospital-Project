@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAST CARE HOSPITAL</title>
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/aos/aos.css" />
+
 </head>
 
 <body>
@@ -14,7 +17,7 @@
     <!-- NavBar - basic navigation headers at top of page-->
         <nav class="navbar navbar-expand-lg navbar-default navbar-static-top navbar-custom Pcolor navbar-dark py-0">
             <div class="container-fluid">
-            <a class="navbar-brand logo" href="../index.html"> <img src="../images/Logo 1.png" alt="logo1" > </a>
+            <a class="navbar-brand logo" href="./index.html"> <img src="./images/Logo 1.png" alt="logo1" > </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>  
                 </button>
@@ -71,22 +74,22 @@
           <div class="carousel-item active ">
             <img src="images/PhoneDoctor.jpg" class="d-block w-100" alt="phone doctor">
             <div class="carousel-caption carousel-tags">
-              <h5>NEED TO TALK TO A DOCTOR</h5>
-              <p>Book a remote video consultation now!.</p>
-              <a class="btn"> BOOK NOW</a>
+                <h2>NEED TO TALK TO A DOCTOR</h2>
+                <p>Book a remote video consultation now!.</p>
+                <a href="./html pages/patientsVisitors.html" class="btn"> BOOK NOW</a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="images/Covid.jpg" class="d-block w-100" alt="covid 19">
             <div class="carousel-caption">
-              <a class="btn carousel-tags"> CORONA VIRUS HEALTH INFORMATION</a>
+              <a href="./html pages/blog.html" class="btn carousel-tags"> CORONA VIRUS HEALTH INFORMATION</a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="images/Enviroment3.jpg" class="d-block w-100" alt="emergency">
             <div class="carousel-caption">
               <h5>SERENE AND CONDUSIVE ENVIROMENT</h5>
-              <p>Our facility is top class and facilitates quick recovery fo our patients.</p>
+              <p>Our facility is top class and facilitates quick recovery.</p>
             </div>
           </div>
           <div class="carousel-item">
@@ -108,16 +111,16 @@
       </div>   
      </section>
 
-     <section class="one container">
+     <section class="one container" >
         <div class="row mt-4">
-          <div class="col-sm-8 bg">
+          <div class="col-sm-8 bg" data-aos="zoom-in" >
               <div class="card-body">
                 <h5 class="card-title">PATIENT-CENTERED CARE</h5>
                 <p class="card-text">Our mission is to serve the health care needs of our community by providing comprehensive and adequate care</p>
                 <p class="card-text">"Exceptional people, Exceptional care" <br> At fast care we are commited to your health 100% as we take care of you with dignity and compassion with our world class facilities and outstanding medical professionals, nothing would be safer than your life in our care.</p>
               </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4" data-aos="zoom-in">
             <div class="card-body">
             <div class="embed-responsive embed-responsive-16by9 ">
                 <iframe class="embed-responsive-item"  src="images/videoblocks-portrait-of-african-young-team-of-smiling-doctors-looking-at-camera-in-medical-office_bteg1dcnr__ad4d819f12d268a70659f2bb6237ad48__P360.mp4"  allowfullscreen></iframe>
@@ -133,7 +136,7 @@
           <div class="card Bcolor">
             <div class="card-body">
               <h5 class="card-title">Our Doctors</h5>
-              <p class="card-text">Being one of the best hospitals in nigeria, we pride ourselves in the quality careprovided by our consultants</p>
+              <p class="card-text">Being one of the best hospitals in nigeria, we pride ourselves in the quality care provided by our consultants</p>
               <a href="#" class="btn">Read more</a>
             </div>
         </div>
@@ -177,38 +180,58 @@
     <section class="services ">
       <div class="container ">
       <div class="row">
-        <div class="col-lg-6 col-md-3 col-sm-0"></div>
+        <div class="col-lg-5 col-md-1 col-sm-0"></div>
+         
+        <div class="col-lg-7 col-md-11 col-sm-12">
 
-        <div class="col-lg-6 col-md-9 col-sm-12 semi">
-        <div class=" circle row">  
-          <div class="" >
-              <a href="" ><img src="icons/001-ambulance.png" class="" alt="emergency">Emergency</a>
-          </div>
-          <div class="">
-              <a href=""><img src="icons/023-test tube.png" class="" alt="">Laboratory</a>
-          </div>
-          <div class="">
-              <a href=""><img src="icons/014-kidneys.png" class="" alt="">Dialysis</a>
-          </div>
-          <div class="">
-              <a href=""><img src="icons/007-doctor.png" class="" alt="">Surgery</a>
-          </div>
-          <div class="">
-              <a href=""><img src="icons/016-human lungs.png" class="" alt="">Nephrology</a>
-          </div>
-          <div class="">
-              <a href=""><img src="icons/020-pharmacy.png" class="" alt="">Pharmacy</a>
-          </div>
-          <div class="">
-              <a href=""><img src="icons/009-eye.png" class="" alt="">E.N.T</a>
-          </div>
-          <div class="">
-            <a href=""><img src="icons/011-heart beat.png" class="" alt="">Cardiology</a>
-          </div>
-          <div class="">
-            <a href=""><img src="icons/011-heart beat.png" class="" alt="">Cardiology</a>
-          </div>
-        </div>
+          <ul class="services-links">
+            <li  data-aos="fade-down-right" data-aos-delay="100">
+              <a href="./html pages/clinicalServices.html" >
+                <img src="icons/001-ambulance.png" class="" alt="emergency">
+                <p> Emergency</p>
+              </a>
+            </li>
+            <li data-aos="fade-down" data-aos-delay="200">
+              <a href="./html pages/clinicalServices.html">
+                <img src="icons/023-test tube.png" class="" alt="">
+                <p>Laboratory</p>  
+              </a>       
+            </li>
+            
+            <li data-aos="fade-down-left" data-aos-delay="100">
+              <a href="./html pages/clinicalServices.html"><img src="icons/014-kidneys.png" class="" alt="">
+                <p>Dialysis</p>
+              </a>
+            </li>
+            <li data-aos="fade-right" data-aos-delay="200">
+              <a href="./html pages/clinicalServices.html"><img src="icons/007-doctor.png" class="" alt="">
+               <p> Surgery</p> </a>
+            </li>
+            <li>
+              <a href="./html pages/clinicalServices.html"><img src="icons/016-human lungs.png" class="" alt="">
+                <p>Nephrology</p> </a>
+            </li>
+            <li data-aos="fade-left" data-aos-delay="200">
+              <a href="./html pages/clinicalServices.html"><img src="icons/020-pharmacy.png" class="" alt="">
+                 <p> Pharmacy</p>
+                </a>
+          </li>
+          <li data-aos="fade-up-right" data-aos-delay="100">
+              <a href="./html pages/clinicalServices.html"><img src="icons/009-eye.png" class="" alt="">
+               <p>Paediatrics</p> 
+              </a>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="200">
+            <a href="./html pages/clinicalServices.html"><img src="icons/011-heart beat.png" class="" alt="">
+              <p>Cardiology</p>
+            </a>
+          </li>
+          <li data-aos="fade-up-left" data-aos-delay="100">
+            <a href="./html pages/clinicalServices.html"><img src="icons/019-nurse.png" class="" alt="">
+              <p> Gynaecology </p>
+            </a>
+          </li>
+          </ul>
       </div>
     </div>
   </div>
@@ -225,7 +248,7 @@
       <div class="row py-4 d-flex align-items-center">
 
        <div class="col-md-4 col-lg-3 text-center text-md-left mb-4 mb-md-0" > 
-            <a href="" class="btn"><i class=" fa fa-plus mr-2 "></i>Book appointment</a>
+            <a href="./html pages/patientsVisitors.html" class="btn"><i class=" fa fa-plus mr-2 "></i>Book appointment</a>
       </div>
 
         <div class="col-md-3 col-lg-5 text-center text-md-center mb-4 mb-md-0">
@@ -236,13 +259,13 @@
     <ul class=" social-network social-circle">
      
         <li>
-            <a href="" class="icoTwitter">
+            <a href="https://twitter.com/JakporG" class="icoTwitter">
               <i class="fab fa-twitter"> </i>
             </a>
         </li>
         
         <li>
-          <a href="" class="icoFacebook">
+          <a href="https://www.linkedin.com/in/emumejakpor-oghenegare-738a35152/" class="icoFacebook">
             <i class="fab fa-facebook-f "></i>
           </a>
         </li>
@@ -283,31 +306,31 @@
         <hr class="deep-purple accent-2 mb-4 mt-0 mx-auto">
               
         <p>
-          <a href="#"><i class="fa fa-chevron-right mr-1"></i>Emergency</a>
+          <a href="./html pages/clinicalServices.html"><i class="fa fa-chevron-right mr-1"></i>Emergency</a>
         </p>
         <p>
-          <a href="#"><i class="fa fa-chevron-right mr-1"></i>Labouratory</a>
+          <a href="./html pages/clinicalServices.html"><i class="fa fa-chevron-right mr-1"></i>Labouratory</a>
         </p>
         <p>
-          <a href="#"><i class="fa fa-chevron-right mr-1"></i>Dialysis</a>
+          <a href="./html pages/clinicalServices.html"><i class="fa fa-chevron-right mr-1"></i>Dialysis</a>
         </p>
         <p>
-          <a href="#"><i class="fa fa-chevron-right mr-1"></i>Surgery</a>
+          <a href="./html pages/clinicalServices.htm"><i class="fa fa-chevron-right mr-1"></i>Surgery</a>
         </p>
         <p>
-          <a href="#"><i class="fa fa-chevron-right mr-1"></i>Nephrology</a>
+          <a href="./html pages/clinicalServices.html"><i class="fa fa-chevron-right mr-1"></i>Nephrology</a>
         </p>
         <p>
-          <a href="#"><i class="fa fa-chevron-right mr-1"></i>Nephrology</a>
+          <a href="./html pages/clinicalServices.html"><i class="fa fa-chevron-right mr-1"></i>Pharmacy</a>
         </p>
         <p>
-          <a href="#"><i class="fa fa-chevron-right mr-1"></i>Pharmacy</a>
+          <a href="./html pages/clinicalServices.html"><i class="fa fa-chevron-right mr-1"></i>Paediatrics</a>
         </p>
         <p>
-          <a href="#"><i class="fa fa-chevron-right mr-1"></i>E.N.T</a>
+          <a href="./html pages/clinicalServices.html"><i class="fa fa-chevron-right mr-1"></i>Cardiology</a>
         </p>
         <p>
-          <a href="#"><i class="fa fa-chevron-right mr-1"></i>Cardiology</a>
+          <a href="./html pages/clinicalServices.html"><i class="fa fa-chevron-right mr-1"></i>Gynaecology</a>
         </p>   
       </div>
 
@@ -315,16 +338,16 @@
         <h6 class="text-uppercase font-weight-bold">Blog</h6>
         <hr class="deep-purple accent-2 mb-4 mt-0  mx-auto">
         <p>
-          <a href="#"><i class="fa fa-chevron-right mr-1"></i>Disclaimer</a>
+          <a href="./html pages/blog.html"><i class="fa fa-chevron-right mr-1"></i>Disclaimer</a>
         </p>
         <p>
-          <a href="#"><i class="fa fa-chevron-right mr-1"></i>Surviving the Pandemic</a>
+          <a href="./html pages/blog.html"><i class="fa fa-chevron-right mr-1"></i>Surviving the Pandemic</a>
         </p>
         <p>
-          <a href="#"><i class="fa fa-chevron-right mr-1"></i>Exercise for healthy living</a>
+          <a href="./html pages/blog.html"><i class="fa fa-chevron-right mr-1"></i>Exercise for healthy living</a>
         </p>
         <p>
-          <a href="#"><i class="fa fa-chevron-right mr-1"></i>Healthy Eating Habits</a>
+          <a href="./html pages/blog.html"><i class="fa fa-chevron-right mr-1"></i>Healthy Eating Habits</a>
         </p>
       </div>
   
@@ -351,9 +374,13 @@
   </div>
 </footer>
 
-<script src="js/hospital.js"></script>
-<script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>   
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/hospital.js"></script>   
+  <script src="css/aos/aos.js"></script>
+  <script>
+    AOS.init({});
+  </script>
 </body>
 </html>
