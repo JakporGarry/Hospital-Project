@@ -11,7 +11,7 @@ $(document).ready(function(){
 		$('.service-container').slideUp(500);
 		$(this.getAttribute('href')).delay(500).slideDown(500);
 	});
-}); // document ready 
+}); // document ready   
 
 //Staff Section Hover Effect
 $('.active-div').each( function() {

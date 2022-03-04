@@ -1,3 +1,9 @@
+:root {
+  --pri-clr: #7352a8;
+  --sec-clr: #9c80cb;
+  --ter-clr: #c4a2fc;
+  --uni-clr: rgb(243, 239, 239);
+}
 *,
 *:before,
 *:after {
@@ -5,26 +11,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
 body {
   font-size: 1rem;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 .Pcolor {
-  background: #7352a8;
+  background: var(--pri-clr);
 }
 .Scolor {
-  background: #9c80cb;
+  background: var(--sec-clr);
 }
 .Bcolor {
-  background: #c4a2fc;
+  background: var(--ter-clr);
 }
 .bg {
-  background: rgb(243, 239, 239);
+  background: var(--uni-clr);
 }
 .btn {
   background: white;
   color: black;
+}
+.btn:hover,
+.btn:focus,
+.btn:active{
+  border:2px solid var(--pri-clr);
 }
 
 .bold {
@@ -47,7 +61,6 @@ body {
 .navbar-brand_custom:hover {
   color: #fff !important;
 }
-
 .dropdown {
   position: relative;
 }
@@ -64,17 +77,18 @@ body {
 
 .dropdown:hover .dropdown-menu {
   display: block;
+  
 }
 
 .dropdown-menu a {
   color: black;
   padding: 1rem;
   text-decoration: none;
-  display: block;
+  display: flex !important;
 }
 
 .dropdown-menu a:hover {
-  background-color: #7352a8;
+  background-color: var(--pri-clr) !important;
 }
 
 /*Carousel*/
@@ -101,12 +115,12 @@ body {
 }
 .carousel .btn {
   padding: 1rem;
-  background: #9c80cb;
+  background: var(--sec-clr) !important;
   border: 2px solid white;
   border-radius: 1.5rem;
 }
 .carousel .btn:hover {
-  background: #7352a8;
+  background: var(--pri-clr) !important;
 }
 .carousel img {
   height: 90vh;
@@ -190,7 +204,7 @@ body {
 
 /*FOOTER*/
 .deep-purple {
-  border-bottom: 2px solid #7352a8;
+  border-bottom: 2px solid var(--pri-clr);
   width: 60px;
   display: inline-block;
 }
@@ -202,8 +216,7 @@ body {
 }
 
 .footer-connect {
-  background: #7352a8;
-  color: #fff;
+  background: var(--pri-clr);
 }
 .page-footer i {
   margin-top: 0.2rem;
@@ -220,7 +233,7 @@ body {
 
 .page-footer i:hover,
 .page-footer a:hover {
-  color: #fff;
+  color: var(--pri-clr);
 }
 
 .page-footer img {
@@ -331,24 +344,26 @@ a.icoInstagram:hover {
 hr {
   width: 100%;
 }
-.links :hover {
-  background-color: #7d61aa;
-  color: white;
-}
-.links a {
-  width: 100%;
-}
+
 .links a {
   background-color: rgb(235, 230, 230);
   margin-top: 0.5rem;
   display: inline-flex;
   color: black;
+  width: 100%;
+}
+.links a:hover {
+  background-color:var(--pri-clr);
 }
 .links i {
   margin-top: 0.2rem;
 }
-.abtUs {
-  margin-bottom: 2rem;
+.abtUs :nth-child(2){
+  border-radius: 10px;
+}
+.abtUs li {
+  line-height: 1.8;
+  margin: 1rem;
 }
 
 .contact-map .bg {
@@ -419,6 +434,7 @@ hr {
 }
 .clinicalServices .service-nav {
   margin-bottom: 2rem;
+
 }
 
 .clinicalServices .service-item {
@@ -427,34 +443,14 @@ hr {
   text-decoration: none;
   padding: 1rem;
   border: 2px solid white;
-  background: #7352a8;
+  background: var(--pri-clr);
   text-align: center;
-}
-
-.clinicalServices .service-item:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  transition: all 500ms;
-}
-
-.clinicalServices .service-item .current {
-  color: black;
-}
-
-.clinicalServices .service-item .current :before {
-  width: 100%;
 }
 
 .service-container {
   width: 30rem;
   margin-left: 1.5rem;
   margin-bottom: 2rem;
-}
-
-.service-container {
   display: none;
 }
 
@@ -467,11 +463,12 @@ hr {
 ***************************************************/
 .blog {
   margin-top: 3rem;
+ 
 }
 
 .blog-heading {
-  background-image: linear-gradient(white, #9c80cb);
-  border-bottom: solid 2px #7352a8;
+  background-image: linear-gradient(white, var(--sec-clr));
+  border-bottom: solid 2px var(--pri-clr);
   background-size: cover;
 }
 .blog-heading h1 {
@@ -593,15 +590,12 @@ hr {
 .accordion .card-body {
   margin-left: 0.8rem;
 }
-.accordion .btn {
-  text-decoration: none;
-}
 
 /**************************************************
     * PATIENTS AND VISITORS*
 ***************************************************/
 .bookings {
-  background-color: #c4a2fc;
+  background-color: var(--ter-clr);
   padding: 4rem;
   margin: 1rem 0;
 }
@@ -647,10 +641,11 @@ hr {
   /**************************************************
     * Index *
 ***************************************************/
+
   /*Carousel*/
   .carousel .btn {
     padding: 1rem;
-    background: #9c80cb;
+    background: var(--sec-clr);
     border: 2px solid white;
     border-radius: 1.5rem;
   }
@@ -713,6 +708,8 @@ hr {
     .navbar img {
       height: 3.5rem;
     }
+
+    
     /*Carousel*/
     .carousel .btn {
       padding: 0.5rem;
@@ -779,6 +776,7 @@ hr {
     .navbar img {
       height: 3rem;
     }
+
     /*Carousel*/
     .carousel .btn {
       padding: 0.3rem;
@@ -843,4 +841,5 @@ hr {
   .blog-heading h1 {
     text-align: center;
   }
+
 }
