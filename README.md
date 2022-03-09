@@ -26,5 +26,5 @@ followed by the list of features and a little scheme. I soon realized my plan la
 due to my inexperience, my mental model was too close to the user point of view and i wasn't able to 
 see upfront how tricky/challenging some of these parts were! 
 
-Having never worked with JQUERY before now, it was tricky at some point As i had to also learn JQUERY
+Having never worked with JQUERY before now, it was tricky at some point As i had to also learn JQUERY which was really challenging.
 
