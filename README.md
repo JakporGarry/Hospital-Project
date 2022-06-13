@@ -2,7 +2,7 @@
 This is a simple Hospital website.
 
 ### Links
-- Live Site URL: [View live page here](http://rest-country-api-eight.vercel.app/)
+- Live Site URL: https://fastcare.netlify.app
 
 ## My process
 
@@ -12,7 +12,7 @@ This is a simple Hospital website.
 - BOOTSTRAP
 - JQUERY
 - FONTAWESOME
-- DESKTOP-FIRST EORK FLOW
+- DESKTOP-FIRST WORK FLOW
 
 
 ### What I learned
